@@ -4,20 +4,13 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 
-const useStyles = makeStyles({
-  root: {
-    flexGrow: 1,
-  },
-});
-
 let Header = () => {
-  const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static" color="default">
+    <div>
+      <AppBar position="fixed" color="default">
         <Toolbar>
-          <Typography variant="h6" color="inherit" align="center">
+          <Typography variant="h4" color="inherit" align="center">
            The Big Mac Exchange
           </Typography>
         </Toolbar>
