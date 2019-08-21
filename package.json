@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "setup": "cd ./server && npm install & cd ./client && npm install",
-    "start": "cd ./server && node server.js & cd ./client && npm run-script start &"
+    "start": "npm run setup && cd ./server && node server.js & cd ./client && npm run-script start &"
   },
   "author": "",
   "license": "ISC"
